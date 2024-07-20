@@ -1,0 +1,13 @@
+version: 2
+updates:
+  # Update npm packages
+  - package-ecosystem: 'npm'
+    directory: 'package.json'
+    schedule:
+      interval: 'weekly'
+
+  # Update Cargo dependencies (if applicable)
+  - package-ecosystem: 'cargo'
+    directory: 'Cargo.toml'
+    schedule:
+      interval: 'weekly'
